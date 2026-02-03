@@ -1,6 +1,12 @@
-import { View, Text, TextInput, TouchableOpacity, StyleSheet } from "react-native";
 import { useRouter } from "expo-router";
 import { useState } from "react";
+import {
+    StyleSheet,
+    Text,
+    TextInput,
+    TouchableOpacity,
+    View,
+} from "react-native";
 
 export default function LoginScreen() {
   const router = useRouter();
@@ -11,7 +17,6 @@ export default function LoginScreen() {
     // TEMP login (API later)
     if (email && password) {
       router.replace("/(dashboard)");
-
     } else {
       alert("Enter email and password");
     }
