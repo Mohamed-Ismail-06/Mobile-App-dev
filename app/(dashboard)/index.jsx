@@ -8,19 +8,31 @@ export default function DashboardScreen() {
     <View style={styles.container}>
       <Text style={styles.title}>Dashboard</Text>
 
-      <TouchableOpacity style={styles.card}>
+      <TouchableOpacity
+        style={styles.card}
+        onPress={() => router.push("/(dashboard)/create-wedding")}
+      >
         <Text style={styles.cardText}>➕ Create Wedding Event</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.card}>
+      <TouchableOpacity
+        style={styles.card}
+        onPress={() => router.push("/(dashboard)/qr-code")}
+      >
         <Text style={styles.cardText}>📱 Generate QR Code</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.card}>
+      <TouchableOpacity
+        style={styles.card}
+        onPress={() => router.push("/(dashboard)/shagun-ledger")}
+      >
         <Text style={styles.cardText}>💰 Shagun Ledger</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.card}>
+      <TouchableOpacity
+        style={styles.card}
+        onPress={() => router.push("/(dashboard)/reports")}
+      >
         <Text style={styles.cardText}>📊 Reports</Text>
       </TouchableOpacity>
     </View>
